@@ -1,6 +1,4 @@
 <template>
-  <!-- Don't drop "q-app" class -->
-  <div id="q-app">
 
 	<ul class="b-menu">
 		<li class="b-menu__item">
@@ -10,15 +8,5 @@
 			<router-link to="/page">Page</router-link>
 		</li>
 	</ul>
-    <router-view />
-  </div>
+
 </template>
-
-<script>
-/*
- * Root component
- */
-export default {}
-</script>
-
-<style></style>

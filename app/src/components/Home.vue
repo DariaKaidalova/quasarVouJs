@@ -1,12 +1,9 @@
 
 <template>
 
-  <q-layout ref="layout" view="lHh Lpr fff" :left-class="{'bg-grey-2': true}">
-<!--     <q-toolbar slot="header"> 
-      <q-toolbar-title>Fluency</q-toolbar-title>
-    </q-toolbar> -->
-    HELLO
-  </q-layout>
+    <q-layout ref="layout" view="lHh Lpr fff" :left-class="{'bg-grey-2': true}">
+        HOME
+    </q-layout>
 
 </template>
 
