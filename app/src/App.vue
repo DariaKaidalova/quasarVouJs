@@ -1,17 +1,9 @@
 <template>
-  <!-- Don't drop "q-app" class -->
+  
   <div id="q-app">
-
-	<ul class="b-menu">
-		<li class="b-menu__item">
-			<router-link to="/">Home</router-link>
-		</li>
-		<li class="b-menu__item">
-			<router-link to="/page">Page</router-link>
-		</li>
-	</ul>
-    <router-view />
+    <router-view /> 
   </div>
+  
 </template>
 
 <script>
