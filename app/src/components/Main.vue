@@ -18,8 +18,8 @@
     <div slot="left">
 
       <q-list-header>Menu</q-list-header>
-      <div><router-link to="/source">Source</router-link></div>
-      <div><router-link to="/overview">Overview</router-link></div>
+      <div class="menu-link"><router-link to="/source">Source</router-link></div>
+      <div class="menu-link"><router-link to="/overview">Overview</router-link></div>
 
     </div>
 
@@ -189,4 +189,9 @@ export default {
 .logo
   position absolute
   transform-style preserve-3d
+.menu-link
+  padding-left: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
 </style>
