@@ -9,14 +9,19 @@ function load (component) {
 }
 
 export default new VueRouter({
+
   routes: [
     {
       path: '/',
       component: load('Main'),
       children: [
         {
-          path: 'subnet',
-          component: load('Subnet')
+          path: 'source',
+          component: load('Source')
+        },
+        {
+          path: 'overview',
+          component: load('Overview')
         }
       ]
     },

@@ -17,12 +17,9 @@
 
     <div slot="left">
 
-      <q-list no-border link inset-separator>
-        <q-list-header>Menu</q-list-header>
-        <q-side-link a to="subnet">
-          <q-item-main label="Subnet"/>
-        </q-side-link>
-      </q-list>
+      <q-list-header>Menu</q-list-header>
+      <div><router-link to="/source">Source</router-link></div>
+      <div><router-link to="/overview">Overview</router-link></div>
 
     </div>
 
