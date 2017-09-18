@@ -17,11 +17,11 @@
 
     <div slot="left">
 
-      <q-list no-border link inset-delimiter>
+      <q-list no-border link inset-separator>
         <q-list-header>Menu</q-list-header>
-        <q-item>
-
-        </q-item>
+        <q-side-link a to="subnet">
+          <q-item-main label="Subnet"/>
+        </q-side-link>
       </q-list>
 
     </div>
