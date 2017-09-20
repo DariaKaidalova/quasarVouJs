@@ -1,5 +1,5 @@
 <template>
-  <div>Assets</div>
+  <div>Anomaly</div>
 </template>
 
 <script></script>

@@ -1,5 +1,5 @@
 <template>
-  <div>Assets</div>
+  <div>Filter</div>
 </template>
 
 <script></script>

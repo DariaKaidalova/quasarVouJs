@@ -1,5 +1,5 @@
 <template>
-  <div>Assets</div>
+  <div>Files</div>
 </template>
 
 <script></script>

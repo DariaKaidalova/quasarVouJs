@@ -18,8 +18,91 @@
     <div slot="left">
 
       <q-list-header>Menu</q-list-header>
-      <div class="menu-link"><router-link to="/source">Source</router-link></div>
-      <div class="menu-link"><router-link to="/overview">Overview</router-link></div>
+      <q-list link class="b-list">
+        <div class="q-list-header">Source</div>
+        
+          <router-link class="b-routeLink" to="/source/subnet" >
+            <q-item>
+              <div class="q-item-main q-item-section">
+                <div class="q-item-label">Subnet</div>
+              </div>
+              <div class="q-item-side q-item-side-right q-item-section">
+                <i aria-hidden="true" class="q-item-icon q-icon material-icons">chevron_right</i>
+              </div>
+            </q-item>
+          </router-link>
+          <router-link class="b-routeLink" to="/source/assets">
+            <q-item>
+              <div class="q-item-main q-item-section">
+                <div class="q-item-label">Assets</div>
+              </div>
+              <div class="q-item-side q-item-side-right q-item-section">
+                <i aria-hidden="true" class="q-item-icon q-icon material-icons">chevron_right</i>
+              </div>
+            </q-item>
+          </router-link>
+          <router-link class="b-routeLink" to="/source/search">
+            <q-item>
+              <div class="q-item-main q-item-section">
+                <div class="q-item-label">Search</div>
+              </div>
+              <div class="q-item-side q-item-side-right q-item-section">
+                <i aria-hidden="true" class="q-item-icon q-icon material-icons">chevron_right</i>
+              </div>
+            </q-item>
+          </router-link>
+          <router-link class="b-routeLink" to="/source/filter">
+            <q-item>
+              <div class="q-item-main q-item-section">
+                <div class="q-item-label">Filter</div>
+              </div>
+              <div class="q-item-side q-item-side-right q-item-section">
+                <i aria-hidden="true" class="q-item-icon q-icon material-icons">chevron_right</i>
+              </div>
+            </q-item>
+          </router-link>
+          <router-link class="b-routeLink" to="/source/alert_filter">
+            <q-item>
+              <div class="q-item-main q-item-section">
+                <div class="q-item-label">Alert Filter</div>
+              </div>
+              <div class="q-item-side q-item-side-right q-item-section">
+                <i aria-hidden="true" class="q-item-icon q-icon material-icons">chevron_right</i>
+              </div>
+            </q-item>
+          </router-link>
+          <router-link class="b-routeLink" to="/source/anomaly">
+            <q-item>
+              <div class="q-item-main q-item-section">
+                <div class="q-item-label">Anomaly</div>
+              </div>
+              <div class="q-item-side q-item-side-right q-item-section">
+                <i aria-hidden="true" class="q-item-icon q-icon material-icons">chevron_right</i>
+              </div>
+            </q-item>
+          </router-link>
+          <router-link class="b-routeLink" to="/source/files">
+            <q-item>
+              <div class="q-item-main q-item-section">
+                <div class="q-item-label">Files</div>
+              </div>
+              <div class="q-item-side q-item-side-right q-item-section">
+                <i aria-hidden="true" class="q-item-icon q-icon material-icons">chevron_right</i>
+              </div>
+            </q-item>
+          </router-link>
+          <router-link class="b-routeLink" to="/source/upload_live">
+            <q-item>
+              <div class="q-item-main q-item-section">
+                <div class="q-item-label">Upload Live</div>
+              </div>
+              <div class="q-item-side q-item-side-right q-item-section">
+                <i aria-hidden="true" class="q-item-icon q-icon material-icons">chevron_right</i>
+              </div>
+            </q-item>
+          </router-link>
+        <!--<div class="q-item-separator-component"></div>-->
+      </q-list>
 
     </div>
 
@@ -28,6 +111,7 @@
       <router-view /> 
     </div>
   </q-layout>
+
 </template>
 
 <script>
@@ -38,6 +122,7 @@ import {
   QLayout,
   QToolbar,
   QToolbarTitle,
+  QTabs,
   QBtn,
   QIcon,
   QList,
@@ -71,6 +156,7 @@ export default {
     QLayout,
     QToolbar,
     QToolbarTitle,
+    QTabs,
     QBtn,
     QIcon,
     QList,
@@ -189,9 +275,19 @@ export default {
 .logo
   position absolute
   transform-style preserve-3d
-.menu-link
-  padding-left: 16px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+.b-list 
+  padding-bottom: 0
+  padding-top: 0
+  
+.b-routeLink,  .b-routeLink:hover
+  color: #0c0c0c
 
+.b-routeLink:hover .q-item
+  background: #d6d6d6
+
+.b-routeLink.router-link-active
+  cursor: default
+
+.b-routeLink.router-link-active .q-item, .b-routeLink.router-link-active:hover .q-item
+  background: #dcdcdc
 </style>

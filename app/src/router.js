@@ -16,12 +16,36 @@ export default new VueRouter({
       component: load('Main'),
       children: [
         {
-          path: 'source',
-          component: load('Source')
+          path: 'source/subnet',
+          component: load('Source_subnet')
         },
         {
-          path: 'overview',
-          component: load('Overview')
+          path: 'source/assets',
+          component: load('Source_assets')
+        },
+        {
+          path: 'source/search',
+          component: load('Source_search')
+        },
+        {
+          path: 'source/filter',
+          component: load('Source_filter')
+        },
+        {
+          path: 'source/alert_filter',
+          component: load('Source_alert_filter')
+        },
+        {
+          path: 'source/anomaly',
+          component: load('Source_anomaly')
+        },
+        {
+          path: 'source/files',
+          component: load('Source_files')
+        },
+        {
+          path: 'source/upload_live',
+          component: load('Source_upload_live')
         }
       ]
     },

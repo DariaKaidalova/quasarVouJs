@@ -1,5 +1,5 @@
 <template>
-  <div>Overview</div>
+  <div>Alert filter</div>
 </template>
 
 <script></script>

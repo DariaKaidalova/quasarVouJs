@@ -1,5 +1,5 @@
 <template>
-  <div>Assets</div>
+  <div>Search</div>
 </template>
 
 <script></script>

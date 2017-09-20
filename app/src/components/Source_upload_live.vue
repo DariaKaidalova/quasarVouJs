@@ -1,5 +1,5 @@
 <template>
-  <div>Assets</div>
+  <div>Upload live</div>
 </template>
 
 <script></script>
