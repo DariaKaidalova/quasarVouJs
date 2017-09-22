@@ -23,6 +23,9 @@
         
           <router-link class="b-routeLink" to="/source/subnet" >
             <q-item>
+              <div class="q-item-side q-item-side-left q-item-section">
+                <i aria-hidden="true" class="q-item-icon q-icon material-icons">network_check</i>
+              </div>
               <div class="q-item-main q-item-section">
                 <div class="q-item-label">Subnet</div>
               </div>
@@ -33,6 +36,9 @@
           </router-link>
           <router-link class="b-routeLink" to="/source/assets">
             <q-item>
+              <div class="q-item-side q-item-side-left q-item-section">
+                <i aria-hidden="true" class="material-icons q-item-icon q-icon">network_wifi</i>
+              </div>
               <div class="q-item-main q-item-section">
                 <div class="q-item-label">Assets</div>
               </div>
@@ -43,6 +49,9 @@
           </router-link>
           <router-link class="b-routeLink" to="/source/search">
             <q-item>
+              <div class="q-item-side q-item-side-left q-item-section">
+                <i aria-hidden="true" class="material-icons q-item-icon q-icon">visibility</i>
+              </div>
               <div class="q-item-main q-item-section">
                 <div class="q-item-label">Search</div>
               </div>
@@ -53,6 +62,9 @@
           </router-link>
           <router-link class="b-routeLink" to="/source/filter">
             <q-item>
+              <div class="q-item-side q-item-side-left q-item-section">
+                <i aria-hidden="true" class="material-icons q-item-icon q-icon">filter_list</i>
+              </div>            
               <div class="q-item-main q-item-section">
                 <div class="q-item-label">Filter</div>
               </div>
@@ -63,6 +75,9 @@
           </router-link>
           <router-link class="b-routeLink" to="/source/alert_filter">
             <q-item>
+              <div class="q-item-side q-item-side-left q-item-section">
+                <i aria-hidden="true" class="material-icons q-item-icon q-icon">filter_list</i>
+              </div>
               <div class="q-item-main q-item-section">
                 <div class="q-item-label">Alert Filter</div>
               </div>
@@ -73,6 +88,9 @@
           </router-link>
           <router-link class="b-routeLink" to="/source/anomaly">
             <q-item>
+              <div class="q-item-side q-item-side-left q-item-section">
+                <i aria-hidden="true" class="material-icons q-item-icon q-icon">warning</i>
+              </div>
               <div class="q-item-main q-item-section">
                 <div class="q-item-label">Anomaly</div>
               </div>
@@ -83,6 +101,9 @@
           </router-link>
           <router-link class="b-routeLink" to="/source/files">
             <q-item>
+              <div class="q-item-side q-item-side-left q-item-section">
+                <i aria-hidden="true" class="material-icons q-item-icon q-icon">insert_drive_file</i>
+              </div>
               <div class="q-item-main q-item-section">
                 <div class="q-item-label">Files</div>
               </div>
@@ -93,6 +114,9 @@
           </router-link>
           <router-link class="b-routeLink" to="/source/upload_live">
             <q-item>
+              <div class="q-item-side q-item-side-left q-item-section">
+                <i aria-hidden="true" class="material-icons q-item-icon q-icon">file_upload</i>
+              </div>
               <div class="q-item-main q-item-section">
                 <div class="q-item-label">Upload Live</div>
               </div>
