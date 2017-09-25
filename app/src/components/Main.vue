@@ -27,7 +27,7 @@
                 <i aria-hidden="true" class="q-item-icon q-icon material-icons">network_check</i>
               </div>
               <div class="q-item-main q-item-section">
-                <div class="q-item-label">Subnet</div>
+                <div class="q-item-label">Subnets</div>
               </div>
               <div class="q-item-side q-item-side-right q-item-section">
                 <i aria-hidden="true" class="q-item-icon q-icon material-icons">chevron_right</i>
@@ -131,7 +131,7 @@
     </div>
 
     <!--Replace following <div> with <router-view /> component if using subRoutes-->
-    <div class="layout-padding logo-container non-selectable no-pointer-events">
+    <div class="layout-padding non-selectable no-pointer-events">
       <router-view /> 
     </div>
   </q-layout>
@@ -288,17 +288,7 @@ export default {
 </script>
 
 <style lang="stylus">
-.logo-container
-  width 255px
-  height 242px
-  perspective 800px
-  position absolute
-  top 50%
-  left 50%
-  transform translateX(-50%) translateY(-50%)
-.logo
-  position absolute
-  transform-style preserve-3d
+/*new styles*/
 .b-list 
   padding-bottom: 0
   padding-top: 0
@@ -314,4 +304,12 @@ export default {
 
 .b-routeLink.router-link-active .q-item, .b-routeLink.router-link-active:hover .q-item
   background: #dcdcdc
+
+.b-table {
+  width: 100%;
+}
+.b-table thead {
+  background: #000;
+  color: #fff;
+}
 </style>
