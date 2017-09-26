@@ -24,10 +24,10 @@
 					<q-btn>
 						<q-icon name="visibility" />
 					</q-btn>
-					<q-btn color="secondary">
+					<q-btn color="brown 5">
 						<q-icon name="edit" />
 					</q-btn>
-					<q-btn color="primary">
+					<q-btn color="secondary">
 						<q-icon name="delete" />
 					</q-btn>
 				</td>
@@ -43,10 +43,10 @@
 					<q-btn>
 						<q-icon name="visibility" />
 					</q-btn>
-					<q-btn color="secondary">
+					<q-btn color="brown 5">
 						<q-icon name="edit" />
 					</q-btn>
-					<q-btn color="primary">
+					<q-btn color="secondary">
 						<q-icon name="delete" />
 					</q-btn>
 				</td>
@@ -62,10 +62,10 @@
 					<q-btn>
 						<q-icon name="visibility" />
 					</q-btn>
-					<q-btn color="secondary">
+					<q-btn color="brown 5">
 						<q-icon name="edit" />
 					</q-btn>
-					<q-btn color="primary">
+					<q-btn color="secondary">
 						<q-icon name="delete" />
 					</q-btn>
 				</td>
@@ -81,10 +81,10 @@
 					<q-btn>
 						<q-icon name="visibility" />
 					</q-btn>
-					<q-btn color="secondary">
+					<q-btn color="brown 5">
 						<q-icon name="edit" />
 					</q-btn>
-					<q-btn color="primary">
+					<q-btn color="secondary">
 						<q-icon name="delete" />
 					</q-btn>
 				</td>
