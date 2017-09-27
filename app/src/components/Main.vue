@@ -131,7 +131,7 @@
     </div>
 
     <!--Replace following <div> with <router-view /> component if using subRoutes-->
-    <div class="layout-padding non-selectable no-pointer-events">
+    <div class="layout-padding">
       <router-view /> 
     </div>
   </q-layout>
