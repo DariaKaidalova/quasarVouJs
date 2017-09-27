@@ -1,17 +1,25 @@
 <template>
 	<q-layout>
 		<q-data-table
-			:data="table"
+			:data="tableData"
 			:config="config"
 			:columns="columns"
 			@refresh="refresh"
 			>
-			<!-- Custom renderer for "message" column -->
-			<template slot="col-id" scope="cell">
-				<span class="light-paragraph">{{cell.id}}</span>
-			</template>
 			<template slot="col-name" scope="cell">
-				<span class="light-paragraph">{{cell.name}}</span>
+				<span class="light-paragraph">{{cell.row.name}}</span>
+			</template>
+			<template slot="col-description" scope="cell">
+				<span class="light-paragraph">{{cell.row.description}}</span>
+			</template>
+			<template slot="col-target" scope="cell">
+				<span class="light-paragraph">{{cell.row.target}}</span>
+			</template>
+			<template slot="col-query" scope="cell">
+				<span class="light-paragraph">{{cell.row.query}}</span>
+			</template>
+			<template slot="col-facets" scope="cell">
+				<span class="light-paragraph">{{cell.row.facets}}</span>
 			</template>
 		</q-data-table>
 	</q-layout>
@@ -20,7 +28,8 @@
 <script>
 	import {QDataTable} from 'quasar'
 	export default {
-		name: 'source_assets',
+
+		name: 'source_search',
 		components: {
 			QDataTable
 		},
@@ -47,37 +56,41 @@
 						noData: 'No data!',
 						noDataAfterFiltering: 'No results!'
 					},
-					labels: {}
+					labels: {
+					    clear: 'delete',
+						search: 'Search',
+						all: 'All'
+					}
 				},
 				columns: [
 					{
 
 						label: 'Name',
-						field: 'isodate',
+						field: 'name',
 						width: 'auto'
 					},
 					{
 						label: 'Description',
-						field: 'isodate',
+						field: 'description',
 						width: 'auto'
 					},
 					{
 						label: 'Target',
-						field: 'isodate',
+						field: 'target',
 						width: 'auto'
 					},
 					{
 						label: 'Query',
-						field: 'isodate',
+						field: 'query',
 						width: 'auto'
 					},
 					{
 						label: 'Facets',
-						field: 'isodate',
+						field: 'facets',
 						width: 'auto'
 					}
 				],
-				data: [
+				tableData: [
 					{
 						id: 1,
 						name: 'test',
@@ -85,10 +98,20 @@
 						target: 'metaflow',
 						query: '...',
 						facets: 'Risks:risks, Signatures:sid...'
+					},
+					{
+						id: 2,
+						name: 'test',
+						description: 'test',
+						target: 'event',
+						query: '...',
+						facets: 'Source::@source, Tags::@tags'
 					}
-				]
+				],
+				refresh: true
 			}
 		}
+
 	}
 </script>
 
