@@ -13,7 +13,7 @@
 
       <q-toolbar-title>Fluency</q-toolbar-title>
       <div ref="target" class="b-user">
-        <div class="b-user__name">Welcome, Jane</div>
+        <div class="b-user__status"></div><div class="b-user__name">Welcome, Jane</div>
         <q-popover ref="popover">
           <q-list item-separator link>
             <router-link class="b-routeLink" to="/profile" >
@@ -354,5 +354,12 @@ export default {
 
 .b-user__name {
   padding: 0 12px;
+}
+.b-user__status {
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #04e604;
 }
 </style>
