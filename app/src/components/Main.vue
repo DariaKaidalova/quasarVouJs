@@ -12,6 +12,33 @@
       </q-btn>
 
       <q-toolbar-title>Fluency</q-toolbar-title>
+      <div ref="target" class="b-user">
+        <div class="b-user__name">Welcome, Jane</div>
+        <q-popover ref="popover">
+          <q-list item-separator link>
+            <router-link class="b-routeLink" to="/profile" >
+              <q-item @click="doSomething(), $refs.popover.close()">
+                <div class="q-item-side q-item-side-left q-item-section">
+                  <i aria-hidden="true" class="q-item-icon q-icon material-icons">settings</i>
+                </div>
+                <div class="q-item-main q-item-section">
+                  <div class="q-item-label">Profile</div>
+                </div>
+              </q-item>
+            </router-link>
+            <router-link class="b-routeLink" to="/logout" >
+              <q-item @click="doSomething(), $refs.popover.close()">
+                <div class="q-item-side q-item-side-left q-item-section">
+                  <i aria-hidden="true" class="q-item-icon q-icon material-icons">power_settings_new</i>
+                </div>
+                <div class="q-item-main q-item-section">
+                  <div class="q-item-label">Logout</div>
+                </div>
+              </q-item>
+            </router-link>
+          </q-list>
+        </q-popover>
+      </div>
 
     </q-toolbar>
 
@@ -153,7 +180,8 @@ import {
   QListHeader,
   QItem,
   QItemSide,
-  QItemMain
+  QItemMain,
+  QPopover
 } from 'quasar'
 
 const
@@ -187,7 +215,8 @@ export default {
     QListHeader,
     QItem,
     QItemSide,
-    QItemMain
+    QItemMain,
+    QPopover
   },
   data () {
     return {
@@ -311,5 +340,19 @@ export default {
 .b-table thead {
   background: #000;
   color: #fff;
+}
+.b-user {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.b-user__name {
+  padding: 0 12px;
 }
 </style>

@@ -16,6 +16,10 @@ export default new VueRouter({
       component: load('Main'),
       children: [
         {
+          path: 'profile',
+          component: load('Profile')
+        },
+        {
           path: 'source/subnet',
           component: load('Source_subnet')
         },
