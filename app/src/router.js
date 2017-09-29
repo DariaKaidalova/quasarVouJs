@@ -53,6 +53,7 @@ export default new VueRouter({
         }
       ]
     },
+    { path: '/login', component: load('Login') },
     // Always leave this last one
     { path: '*', component: load('Error404') } // Not found
   ]

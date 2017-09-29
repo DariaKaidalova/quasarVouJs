@@ -26,7 +26,7 @@
                 </div>
               </q-item>
             </router-link>
-            <router-link class="b-routeLink" to="/logout" >
+            <router-link class="b-routeLink" to="/login" >
               <q-item @click="doSomething(), $refs.popover.close()">
                 <div class="q-item-side q-item-side-left q-item-section">
                   <i aria-hidden="true" class="q-item-icon q-icon material-icons">power_settings_new</i>
