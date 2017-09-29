@@ -4,7 +4,7 @@
     
     <div class="l-login flex column justify-center items-center">
       <div class="b-login">
-          <h1 class="text-center text-primary uppercase">Fluency</h1>
+          <h1 class="b-login__siteTitle text-center text-primary uppercase">Fluency</h1>
           <div class="text-center"><big>Sign In</big></div>
           <q-input v-model="text" type="email" float-label="Email"/>
           <q-input v-model="text" type="password" float-label="Password" />
@@ -15,6 +15,7 @@
       </div>
     </div>
   </q-layout>
+
 </template>
 
 <script>
@@ -164,5 +165,8 @@ export default {
   .b-login__btnWrapper {
     margin: 20px 0 15px;
   }
-
+  .b-login__siteTitle {
+    margin-top: 0;
+    line-height: 1;
+  }
 </style>
