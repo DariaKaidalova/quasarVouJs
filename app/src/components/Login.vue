@@ -8,9 +8,11 @@
           <div class="text-center"><big>Sign In</big></div>
           <q-input v-model="text" type="email" float-label="Email"/>
           <q-input v-model="text" type="password" float-label="Password" />
+          <div class="b-login__errorMessage text-red text-center">Please fill in all fields</div>
           <div class="b-login__btnWrapper">
             <q-btn icon="forward" color="primary">Login</q-btn>
           </div>
+
           <small>By login into Fluency, you are accepting the <a href="">Terms of Use</a></small>
       </div>
     </div>
@@ -161,6 +163,9 @@ export default {
   }
   .b-login {
     width: 400px;
+    box-sizing: border-box;
+    padding: 20px 25px;
+    box-shadow: 0px 0px 50px -13px rgba(0,0,0,0.75);
   }
   .b-login__btnWrapper {
     margin: 20px 0 15px;
@@ -168,5 +173,8 @@ export default {
   .b-login__siteTitle {
     margin-top: 0;
     line-height: 1;
+  }
+  .b-login__errorMessage {
+    margin: 15px 0;
   }
 </style>
