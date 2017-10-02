@@ -1,0 +1,21 @@
+.b-routeLink {
+  color: #0c0c0c;
+
+  &:hover {
+    color: #0c0c0c;
+
+    .q-item {
+      background: #d6d6d6;
+    }
+  }
+
+  &.router-link-active {
+    cursor: default;
+  }
+
+  &:hover,  &.router-link-active {
+    .q-item {
+      background: #dcdcdc;
+    }
+  }
+}  

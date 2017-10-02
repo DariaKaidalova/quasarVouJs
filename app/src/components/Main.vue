@@ -45,7 +45,7 @@
     <div slot="left">
 
       <q-list-header>Menu</q-list-header>
-      <q-list link class="b-list">
+      <q-list link class="b-menuList">
         <div class="q-list-header">Source</div>
         
           <router-link class="b-routeLink" to="/source/subnet" >
@@ -316,50 +316,4 @@ export default {
 }
 </script>
 
-<style lang="stylus">
-/*new styles*/
-.b-list 
-  padding-bottom: 0
-  padding-top: 0
-  
-.b-routeLink,  .b-routeLink:hover
-  color: #0c0c0c
-
-.b-routeLink:hover .q-item
-  background: #d6d6d6
-
-.b-routeLink.router-link-active
-  cursor: default
-
-.b-routeLink.router-link-active .q-item, .b-routeLink.router-link-active:hover .q-item
-  background: #dcdcdc
-
-.b-table {
-  width: 100%;
-}
-.b-table thead {
-  background: #000;
-  color: #fff;
-}
-.b-user {
-  position: absolute;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.b-user__name {
-  padding: 0 12px;
-}
-.b-user__status {
-  display: block;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background: #04e604;
-}
-</style>
+<style src="../assets/styles/main.scss" lang="scss"></style>
