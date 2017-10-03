@@ -32,6 +32,10 @@ export default new VueRouter({
           component: load('Source_search')
         },
         {
+          path: 'source/search/edit',
+          component: load('Source_search_edit')
+        },
+        {
           path: 'source/filter',
           component: load('Source_filter')
         },
