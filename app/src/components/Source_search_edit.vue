@@ -1,7 +1,7 @@
 <template>
 	<q-layout>
 		<div class="b-row">
-			<h2 class="b-title">UPDATE SAVED SEARCH</h2>
+			<h2 class="b-title">Update saved search</h2>
 			<q-input v-model="text" float-label="Name" placeholder=""/>
 			<q-input v-model="text" float-label="Description" placeholder=""/>
 			<q-input v-model="text" float-label="Query" placeholder=""/>
@@ -32,7 +32,7 @@
 				</template>
 			</q-data-table>
 		</div>
-		<div class="b-row flex justify-between items-center">
+		<div class="b-row flex justify-start items-center">
 			<div class="b-row__item">
 				<q-input v-model="text" float-label="Title" placeholder=""/>
 			</div>
