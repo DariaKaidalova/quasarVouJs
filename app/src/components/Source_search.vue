@@ -21,25 +21,9 @@
 			<template slot="col-facets" scope="cell">
 				<span class="light-paragraph">{{cell.row.facets}}</span>
 			</template>
-			<!-- Custom renderer for "source" column -->
-			<template slot="col-source" scope="cell">
-				<span v-if="cell.data === 'Audit'" class="label text-white bg-primary">
-				Audit
-				<q-tooltip>Some data</q-tooltip>
-				</span>
-				<span v-else class="label text-white bg-negative">{{cell.data}}</span>
-			</template>
-			<!-- Custom renderer for "action" column with button for custom action -->
-			<template slot='col-action' scope='cell'>
-				<q-btn color="primary" @click='doSomethingMethod(cell.row.id)'>View</q-btn>
-			</template>
-			<!-- Custom renderer when user selected one or more rows -->
-			<template slot="selection" scope="selection">
-				<q-btn color="primary" @click="changeMessage(selection)">
-					<i>edit</i>
-				</q-btn>
-				<q-btn color="primary" @click="deleteRow(selection)">
-					<i>delete</i>
+			<template slot="col-buttons" scope="cell">
+				<q-btn color="primary" @click="$router.push('/source/search/edit')" small>
+					<q-icon name="mode_edit" />
 				</q-btn>
 			</template>
 		</q-data-table>
@@ -47,12 +31,14 @@
 </template>
 
 <script>
-	import {QDataTable} from 'quasar'
+	import {QDataTable, QBtn, QIcon} from 'quasar'
 	export default {
 
 		name: 'source_search',
 		components: {
-			QDataTable
+			QDataTable,
+			QBtn,
+			QIcon
 		},
 		data () {
 			return {
@@ -112,6 +98,13 @@
 						field: 'facets',
 						width: 'auto',
 						filter: true
+					},
+					{
+						label: '',
+						field: 'buttons',
+						width: 'auto',
+						filter: true,
+						style: {textAlign: 'right'}
 					}
 				],
 				tableData: [
