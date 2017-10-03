@@ -1,6 +1,6 @@
 <template>
 	<q-layout>
-		<h3><small>UPDATE SAVED SEARCH</small></h3>
+		<h2 class="b-title"><small>UPDATE SAVED SEARCH</small></h2>
 		<q-input v-model="text" float-label="Name" placeholder=""/>
 		<q-input v-model="text" float-label="Description" placeholder=""/>
 		<q-input v-model="text" float-label="Query" placeholder=""/>
